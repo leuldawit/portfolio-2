@@ -1,0 +1,181 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+body{
+    /* background: linear-gradient(to right bottom, white 50%, #212531 50%);
+    background-repeat: no-repeat;
+    background-size:100vw 130vh; */
+    position: absolute;
+    
+    left: 0%;
+    top: 7%;
+    box-sizing: border-box;
+}
+nav{
+    position: relative;
+    flex: 1;
+    text-align: center;
+  
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10%;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Lexend';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+color: #000000;
+    
+}
+nav ul li:hover{
+    color: #393E46;
+
+}
+.col1{
+    position: relative;
+    top: 10vh;
+    animation: dropIn 1.5s ease forwards;
+
+}@keyframes dropIn {
+    from {transform: translateY(-500px);}
+    to{transform: translateY(0);}
+    
+}
+
+.img_container{
+    position: absolute;
+    top: 0vh;
+    margin-left: 60%;
+}
+
+.img_container img{
+    
+    width: 400px;
+height: 387px;
+
+}
+
+
+ .profession{
+    
+    position: relative;
+    width: 40vw;
+height: auto;
+margin-left: 5%;
+top: 5vh;
+
+background-color: #222831;
+color: #EEEEEE;
+border-radius:5% ;
+
+    
+}
+
+
+.profession a{
+    font-weight: lighter;
+    font-size: 18px;
+    
+}
+.profession p{
+    position: relative;
+    font-family: 'Lexend';
+font-style: normal;
+font-weight: 600;
+font-size:3em;
+width: 30vw;
+line-height: 60px;
+margin-left: 15%;
+top: -6vh;
+}
+.profession button{
+    background-color: #EEEEEE;
+    width: 130px;
+ margin-left: 30%;
+ cursor: pointer; 
+ 
+ transition: width 0.5s;  
+}
+
+.profession button img{
+    margin-left: 20%;
+    height: 15px;
+     display:none;
+    
+}
+.profession button:hover img{
+   display: inline-block;
+   animation: shake 0.5s;
+  animation-iteration-count:1;
+}@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-2px, -2px) rotate(1deg); }
+     30% { transform: translate(-3px, -2px) rotate(0deg); }
+   
+  }
+  
+.profession button:hover{    
+    width:140px;
+    justify-content: space-between;
+}
+
+.mouse img{
+    position: relative;
+    width: 15vw;
+    height: 15vh;
+    top:15vh;
+    margin-left: 40%;
+   
+}
+
+.aboutme{
+     position: relative;
+    top: 25vh;
+}
+
+.title{
+   
+margin-left: 43%;
+margin-bottom: 5%;
+
+
+font-family: 'Lexend';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 60px;
+
+color: #000000;
+
+}
+.about_content{
+    position: relative;
+    height: auto;
+    margin-left: 25%;
+
+    
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 147.5%;
+    /* or 35px */
+    
+    
+    color: #000000;
+    
+}
+
+
+.me img{
+    position: absolute;
+    top:0vh;
+    margin-left: 5%;
+    margin-top: 5%;
+}
