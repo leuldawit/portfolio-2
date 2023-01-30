@@ -13,18 +13,18 @@
             <nav>
                 <ul class="nav-items">
                     <li class="nav-item">
-                        <a >
+                        <a onclick="scrolltohome()">
                             Home
                         </a>
                      </li>
                      <li class="nav-item">
-                        <a >
+                        <a onclick="scrolltoabout()">
                             about
                         </a>
                      </li>
                      <li class="nav-item">
-                        <a >
-                            products
+                        <a onclick="scrolltoprojects()" >
+                            Projects
                         </a>
                      </li>
                 </ul>
@@ -43,7 +43,7 @@
                 <p>
                     <br > <a>Welcome my portfolio</a>  </br>
                      Hi! I’m web designer and UI/UX designer.
-                <button>
+                <button onclick="scrolltocontacts()">
                      Contact us <img src="phone-solid.svg" alt="">
                 </button>
                 </p>
@@ -55,7 +55,7 @@
         </div>
         <div class="col2">
             <div class="aboutme">
-            <div class="title">
+            <div class="title"id="aboutpage">
                 About me
             </div>
             <div class="about_content">
@@ -102,20 +102,20 @@
             
             </div>
         </div>
-        <div class="col3">
+        <div class="col3" >
             <div class="projects">
-                <p>projects</p>
-                <div class="project1 card"></div>
+                <p id="projectspage">projects</p>
+                <div class="project1 card" ></div>
                 <div class="project2 card"></div>
                 <div class="project3 card"></div>
                 <div class="project4 card"></div>
             </div>
-            <div class="contact">
-                <p>
+            <div class="contact" >
+                <p id="contactspage">
                     I'm currently looking to join a cross-functional
                      team that values improving people's lives through 
                      accessible design. or have a project in mind?
-                      Write to me
+                      <br> Write to me
                 </p>
                 <div class="inputs">
                    <input id="input-name" type="text" placeholder="Email">
@@ -124,6 +124,12 @@
                 <button>
                     Send <img src="share-solid.svg" alt="">
                 </button>
+                <div class="socials">
+                    <img  src="Gmail.png" alt="gmail">
+                <img src="Instagram.png" alt="Instagram">
+                <img src="Linkedin.png" alt="Linkedin">
+                <img src="Telegram.png" alt="Telegram">
+                </div> 
             </div>
         </div>   
         

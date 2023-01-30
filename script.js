@@ -87,3 +87,23 @@ function move1() {
         
     } 
     }
+
+    function scrolltohome(){
+      document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    
+  
+  }
+    function scrolltoprojects() {
+      var elem = document.getElementById("projectspage");
+      elem.scrollIntoView();
+      
+    }
+    function scrolltoabout() {
+      var elem = document.getElementById("aboutpage");
+      elem.scrollIntoView();
+    }
+    function scrolltocontacts() {
+      var elem = document.getElementById("contactspage");
+      elem.scrollIntoView();
+    }
