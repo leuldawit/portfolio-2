@@ -78,14 +78,16 @@ function move1() {
       
   function changeTox(x) {
     var menu=document.getElementById("hamburger");
-    var items=document.getElementsByClassName("nav-items");
-    var item=document.getElementsByClassName("nav-item");
-  x.classList.toggle("change");
-    if(menu.style.display=='none') {
-        menu.style.display="block" ;  
-        
-        
-    } 
+    var items=document.getElementById("nav-items");
+    x.classList.toggle("change");
+    
+      if(menu.style.display=='none' ) {
+        menu.style.display="block" ;
+        items.classList.toggle("change");
+      } 
+      else { 
+        items.classList.toggle("change"); 
+      }
     }
 
     function scrolltohome(){
