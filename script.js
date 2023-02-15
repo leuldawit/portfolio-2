@@ -49,7 +49,64 @@ function move1() {
     var width = 0;
     var id = setInterval(frame, 10);
     function frame() {
+      if (width >= 95) {
+        clearInterval(id);
+      } else {
+        width++; 
+        elem.style.width = width + '%'; 
+        
+      }
+    }
+  }
+  function move5() {
+    var elem = document.getElementById("bar5");   
+    var width = 0;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 94) {
+        clearInterval(id);
+      } else {
+        width++; 
+        elem.style.width = width + '%'; 
+        
+      }
+    }
+  }
+  function move6() {
+    var elem = document.getElementById("bar6");   
+    var width = 0;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 86) {
+        clearInterval(id);
+      } else {
+        width++; 
+        elem.style.width = width + '%'; 
+        
+      }
+    }
+  }
+
+  function move7() {
+    var elem = document.getElementById("bar7");   
+    var width = 0;
+    var id = setInterval(frame, 10);
+    function frame() {
       if (width >= 100) {
+        clearInterval(id);
+      } else {
+        width++; 
+        elem.style.width = width + '%'; 
+        
+      }
+    }
+  }
+  function move8() {
+    var elem = document.getElementById("bar8");   
+    var width = 0;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 80) {
         clearInterval(id);
       } else {
         width++; 
@@ -69,6 +126,10 @@ function move1() {
         move2();
         move3();
         move4();
+        move5();
+        move6();
+        move7();
+        move8();
       }
       
     });

@@ -347,7 +347,7 @@ flex-direction: row;
     position: relative;
     top:7vh;
     left: 0vh;
-    width: 30vw;
+    width: 15vw;
 }
 .skills .bar-container{
     box-shadow: 0 1px 5px gray;
@@ -358,6 +358,7 @@ flex-direction: row;
     margin-bottom: 2vw;
     position: relative;
    top:0.5vh;
+   border-radius: 15px;
 }
 .skills .row{
     margin-left: 15%;
@@ -367,21 +368,38 @@ flex-direction: row;
 }
 .skills .row .bar-container #bar1{ 
     background-color: aqua;
-    border-radius: 20%;  
+    border-radius: 15px;  
 }
 
 .skills .row .bar-container #bar2{
     background-color: aqua;
-    border-radius: 20%;
+    border-radius: 15px;
 }
 .skills .row .bar-container #bar3{
     background-color: aqua;
-    border-radius: 20%;
+    border-radius: 15px;
 }
 .skills .row .bar-container #bar4{
     background-color: aqua;
-    border-radius: 20%;
+    border-radius: 15px;
 }
+.skills .row .bar-container #bar5{
+    background-color: aqua;
+    border-radius: 15px;
+}
+.skills .row .bar-container #bar6{
+    background-color: aqua;
+    border-radius: 15px;
+}
+.skills .row .bar-container #bar7{
+    background-color: aqua;
+    border-radius: 15px;
+}
+.skills .row .bar-container #bar8{
+    background-color: aqua;
+    border-radius: 15px;
+}
+
 .col3{
     position: relative;
     top: 0vh;
@@ -677,7 +695,7 @@ transition: transform 400ms ease;
     .skill-container{
         top: 10vh;
         width: 70vw;
-        height:20em;
+        height:50vh;
         margin-left: 10%;
         flex-direction: column;
     }
