@@ -6,7 +6,8 @@ body{
     /* background: linear-gradient(to right bottom, white 50%, #212531 50%);
     background-repeat: no-repeat;
     background-size:100vw 130vh; */
-    
+    font-family: 'Lexend',serif;
+font-style: normal;
 }
 .nav_bar nav ul li {
     text-decoration: none;
@@ -240,11 +241,12 @@ top: -6vh;
     margin-left: 20%;
     height: 15px;
      display:none;
-    
+     
 }
 .profession button:hover img{
    display: inline-block;
-   animation: shake 0.5s;
+   animation: shake 0.5s; 
+   animation-delay: 0.4s;
   animation-iteration-count:1;
 }@keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -326,17 +328,25 @@ color: #000000;
     color: #EEEEEE;
     margin-left: 35%;
     top: 30vh;
-    width: 30vw;
-    height: auto;
+    width: 32vw;
+    height: 30vh ;
     background-color: #141414;
 border-radius: 23px;
+display:flex;
+flex-direction: row;
 
 }
 
-.skill-container .skills .t{
-   margin-left: 45%;
-    line-height: 3em;
-   
+.skill-container  .t{
+   position: relative;
+   left: 45%;
+    top: 10px;
+}
+.skills{
+    position: relative;
+    top:7vh;
+    left: 0vh;
+    width: 50%;
 }
 .skills .bar-container{
     box-shadow: 0 1px 5px gray;
@@ -344,13 +354,15 @@ border-radius: 23px;
     width: 5vw;
     height: 1vh;
     margin-right: 1vw;
-    margin-bottom:30%;
+    margin-bottom: 2vw;
     position: relative;
    top:0.5vh;
 }
 .skills .row{
     margin-left: 15%;
-    display:inline-flex;
+    display: flex;
+  flex-direction: row;
+
 }
 .skills .row .bar-container #bar1{ 
     background-color: aqua;
@@ -390,17 +402,23 @@ color: #000000;
     box-shadow: 14px 14px 12px -2px rgba(0, 0, 0, 0.25);
     color: #EEEEEE;
     top: 90vh;
-    background-color:antiquewhite;
 border-radius: 23px;
-display: inline-block;
+display: flex;
 transition: transform 400ms ease;
 
 }
 .projects .project1{
-    
     width: 25vw;
     height: 30vh;
     margin-left: 16%;
+
+}
+.project1 video{
+    
+    width: 30vw;
+    height: 30vh;
+    box-shadow: 14px 14px 12px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
 }
 
 .projects .project2{
@@ -409,11 +427,25 @@ transition: transform 400ms ease;
     height: 30vh;
     margin-left: 60%;
 }
+.project2 video{
+    
+    width: 25vw;
+    height: 30vh;
+    box-shadow: 14px 14px 12px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+}
 .projects .project3{
     top: 70vh;
     width: 22vw;
     height: 30vh;
     margin-left: 16%;
+}
+.project3 video{
+    
+    width: 22vw;
+    height: 30vh;
+    box-shadow: 14px 14px 12px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
 }
 
 .projects .project4{
@@ -422,10 +454,50 @@ transition: transform 400ms ease;
     height: 28vh;
     margin-left: 55%;
 }
-.projects .card:hover{
-    box-shadow: inset 6px 7px 18px #c5c5c5;
-
+.project4 video{
+    
+    width: 30vw;
+    height: 28vh;
+    box-shadow: 14px 14px 12px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
 }
+
+.projects .card div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ababab;
+  border-radius: 23px;
+}
+.projects .card button{
+    color: white;
+  font-size: 20px;
+  position: absolute;
+  border-color: #EEEEEE;
+  background-color: #7e7e7e;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-color: #ffffff;
+  cursor: pointer;
+  text-decoration:underline;
+    
+}
+.projects .card:hover div{
+    opacity: 0.5;
+ 
+    
+}
+
 .contact{
     margin-bottom: 30%;
     bottom: 10px;
@@ -603,13 +675,19 @@ transition: transform 400ms ease;
      }
     .skill-container{
         top: 10vh;
-        width: 50vw;
-        height: auto;
-        margin-left: 25%;
+        width: 70vw;
+        height:20em;
+        margin-left: 10%;
+        flex-direction: column;
     }
     .skill-container .skills .row .bar-container{
-        width: 25vw;
+        width: 15vw;
+        margin-bottom:5vw;
     }
+    .skills{
+        width: 100vw;
+    }
+    
     .col3{
         position: relative;
         top: -35vh;
@@ -620,10 +698,8 @@ transition: transform 400ms ease;
 
     .projects .card{
         position: relative;
-        box-shadow: 14px 14px 12px -2px rgba(0, 0, 0, 0.25);
         color: #EEEEEE;
         top: 90vh;
-        background-color:antiquewhite;
     border-radius: 23px;
     display: inline-block;
     transition: transform 400ms ease;
@@ -636,6 +712,14 @@ transition: transform 400ms ease;
         height: 15vh;
         margin-left: 16%;
     }
+    .project1 video{
+    
+        width: 45vw;
+        height: 15vh;
+        box-shadow: 14px 14px 12px -2px rgba(0, 0, 0, 0.25);
+        border-radius: 23px;
+    }
+    
     
     .projects .project2{
         top: 85vh;
@@ -643,20 +727,40 @@ transition: transform 400ms ease;
         height: 13vh;
         margin-left: 38%;
     }
+    .project2 video{
+    
+        width: 50vw;
+        height: 13vh;
+        box-shadow: 14px 14px 12px -2px rgba(0, 0, 0, 0.25);
+        border-radius: 23px;
+    }
+    
     .projects .project3{
         top: 90vh;
         width: 45vw;
         height: 15vh;
         margin-left: 16%;
     }
+    .project3 video{
     
+        width: 45vw;
+        height: 15vh;
+        box-shadow: 14px 14px 12px -2px rgba(0, 0, 0, 0.25);
+        border-radius: 23px;
+    }
     .projects .project4{
         top: 95vh;
         width: 50vw;
         height: 15vh;
         margin-left: 40%;
     }
+    .project4 video{
     
+        width: 50vw;
+        height: 15vh;
+        box-shadow: 14px 14px 12px -2px rgba(0, 0, 0, 0.25);
+        border-radius: 23px;
+    }
     .col3 .contact{
         position: relative;
         top:35vh;
