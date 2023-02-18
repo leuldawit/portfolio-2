@@ -9,6 +9,47 @@ body{
     font-family: 'Lexend',serif;
 font-style: normal;
 }
+
+#logo{
+    font-family: 'Lexend',serif;
+font-style: normal;
+font-weight: 600;
+color: #000;
+text-decoration: none;
+font-size: xx-large;
+position: absolute;
+top: 45px;
+margin-left: 10px;
+padding:5px ;
+border-radius: 20px;
+  border: 5px solid #ffffff;
+
+}
+#logo::before {
+    content: '';
+    background-color:#000000;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0px;
+    height: 100%;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+    
+  }
+  #logo:hover .line{
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+  }
+  #logo:hover {
+    color: #ffffff;
+  }
+  #logo:hover::before {
+    bottom: 0;
+    width: 100%;
+    
+  }
+
 .nav_bar nav ul li {
     text-decoration: none;
     list-style: none;
@@ -59,12 +100,14 @@ nav {
     color: black;
     white-space: nowrap;
     margin-right: 30%;
+    text-decoration: none;
     
 }
 
 .nav-item a {
     position: relative;
     color: black;
+    text-decoration: none;
     
 }
 
@@ -84,8 +127,14 @@ nav {
 
  
 }
-
-
+.line{
+    background-color: #000;
+    height: 30px;
+    width: 3px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
 
 #hamburger .first-line {
     width: 100%;
@@ -228,20 +277,22 @@ margin-left: 15%;
 top: -6vh;
 }
 .profession button{
+    font-family: 'Lexend',serif;
+    font-style: normal;
     background-color: #EEEEEE;
-    width: 140px;
+    width: 150px;
  margin-left: 30%;
  cursor: pointer; 
  border-radius: 20px;
- transition: width 0.5s;  
+ transition: width 0.5s; 
+
  padding: 16px;
 }
 
 .profession button img{
     margin-left: 20%;
     height: 15px;
-     display:none;
-     
+     display:none;  
 }
 .profession button:hover img{
    display: inline-block;
@@ -257,7 +308,7 @@ top: -6vh;
   }
   
 .profession button:hover{    
-    width:150px;
+    width:155px;
     justify-content: space-between;
 }
 
@@ -328,7 +379,7 @@ color: #000000;
     color: #EEEEEE;
     margin-left: 35%;
     top: 30vh;
-    width: 32vw;
+    width: 35vw;
     height: 30vh ;
     background-color: #141414;
 border-radius: 23px;
@@ -535,6 +586,8 @@ transition: transform 400ms ease;
     border-image: linear-gradient(to right, rgba(192, 54, 154, 1),  rgba(14, 41, 136, 0.8908),rgba(46, 137, 13, 0.89));
     border-image-slice: 1;
     padding: 10px;
+    font-family: 'Lexend',serif;
+font-style: normal;
 }
 #input-message{
     position: relative;
@@ -544,15 +597,19 @@ transition: transform 400ms ease;
     border-image: linear-gradient(to right, rgba(192, 54, 154, 1),  rgba(14, 41, 136, 0.8908),rgba(46, 137, 13, 0.89));
     border-image-slice: 1;
     padding: 40px;
+    font-family: 'Lexend',serif;
+font-style: normal;
 }
 
 
 .contact button{
-    
+    font-family: 'Lexend',serif;
+font-style: normal;
     position: relative;
     background-color: #00ADB5;
     top: 83vh;
     width: 90px;
+    height: 25px;
  margin-left: 46%;
  cursor: pointer; 
  border-radius: 20px;
@@ -593,6 +650,9 @@ transition: transform 400ms ease;
 @media (max-width: 800px) {
 
     /* mobile nav*/
+    #logo{
+        top: 0px;
+    }
     .nav_bar{
     width: 50vw;
         margin-left: 0%;
