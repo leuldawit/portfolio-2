@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="design.css">
+    <link rel="shortcut icon" href="images/me with vector.svg">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lexend">
     <title>portfolio-2</title>
@@ -138,11 +139,64 @@
             
             </div>
         </div>
+        <div align="center" class="github">
+            <h3 align="center" style="color:rgb(0, 0, 0); font-weight: 200;">Activities</h3>
+            <script
+            src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+            ></script>
+            
+            <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+            <link
+             rel="stylesheet"
+             href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+            />
+            
+            <!-- Prepare a container for your calendar. -->
+            <div align="center" class="calendar" style="color: rgb(0, 0, 0); border: 0px">
+              <!-- Loading stuff -->
+              Loading the data just for you.
+            </div>
+            
+            <script >
+              // or enable responsive functionality
+              GitHubCalendar(".calendar", "leuldawit", { responsive: true });
+            </script> 
+            <style>
+                :root {
+                  --color-calendar-graph-day-bg: #252222;
+                  --color-calendar-graph-day-L1-bg: #39dd34;
+                  --color-calendar-graph-day-L2-bg: #45a045;
+                  --color-calendar-graph-day-L3-bg: #047526;
+                  --color-calendar-graph-day-L4-bg: #0a4208;
+              }
+              .contrib-number {
+                  font-weight: 300;
+                  line-height: 1.3em;
+                  font-size: 24px;
+                  display: block;
+                  color: #000000;
+              }
+              .contrib-column {
+                padding: 15px 0;
+                text-align: center;
+                border-left: 0px;
+                border-top: 0px;
+                font-size: 11px;
+}
+text.ContributionCalendar-label {
+    fill: #000000;
+    font-size: 11px;
+}
+              </style>
+                 
+        </div>
+
+
         <div class="col3" >
             <div class="projects">
                 <p id="projectspage">projects</p>
                 <div class="project1 card" >        
-                 <!-- <video src="images/Untitled video - Made with Clipchamp.mp4" muted autoplay loop></video>                
+                    <!-- <video src="images/Untitled video - Made with Clipchamp.mp4" muted autoplay loop></video>                
                  <div class="goto">
                     
                  <button>Visit</button>
