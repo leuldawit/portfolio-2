@@ -131,6 +131,27 @@ nav {
     text-decoration: none;
     
 }
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background-color: black;
+    
+    transition: transform 0.25s ease-out;
+    transform-origin: center;
+
+}
+.nav-item a:hover:after {
+    transform-origin: center;
+    transform: scaleX(1);
+   
+}
+
 
 
 #hamburger {
@@ -216,27 +237,6 @@ nav {
  #hamburger.change .third-line {
     transform: rotateZ(45deg) translateY(-15px);
     right: 12px;
-   
-}
-
-.nav-item a::after {
-    content: '';
-    position: absolute;
-    
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: -4px;
-    left: 0;
-    background-color: black;
-    
-    transition: transform 0.25s ease-out;
-    transform-origin: center;
-
-}
-.nav-item a:hover:after {
-    transform-origin: center;
-    transform: scaleX(1);
    
 }
 
@@ -878,7 +878,7 @@ font-style: normal;
         margin-left: 0%;
         font-size: large;
         font-weight:bold;
-        width: 1o00vw;
+        width: 100vw;
     } 
     .col3 .inputs #input-name{
         margin-left: 25%;
